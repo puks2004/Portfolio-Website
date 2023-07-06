@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Code+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/abcd.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: #fff;
+    margin-left: 0;
+    margin-top: -1%;
+}
+.iname {
+    color: #ff004f;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 2% 20px;
+    margin-top: 0;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 50px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/* --------------------about--------------- */
+#about{
+    padding: 100px 0;
+    color: #fff;
+    background-color: #161515;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    margin:  0;
+    border-radius: 15px;
+}
+.paragraph{
+    font-size: 20px;
+    text-align: justify;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 30px 0 20px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-links::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 17px;
+}
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*---------------------project---------------- */
+#project{
+    font-size: 22.7px;
+    padding: 100px 0;
+    margin-left: 10%;
+    background-color: #080808;
+}
+.project-details{
+    font-size: 25px;
+}
+
+/*-----------------contact--------------------*/
+
+#contact{
+    background-color: #161515;
+    color: #fff ;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 10px;
+    margin-left: 0%;
+    padding: 20px 0;
+}
+.sub-title{
+    font-size: 45px;
+}
+.add_ress{
+    font-size: 20px;
+    margin-top: 13%;
+}
+.add_ress span{
+    font-size: 28px;
+    color: #fff;
+    padding-left: 0;
+}
+.e_mail{
+    font-size: 20px;
+}
+.phone{
+    font-size: 20px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 15px;
+    color: #ff004f;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.button{
+    padding: 10px 18px;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+    background: #ff004f;
+}
+
+
+.contact-right form{
+    width: 100%;
+}
+form input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+form input.name{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 6px;
+}
+form button{
+    padding: 10px 18;
+    border: none;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+    background: #ff004f;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #080808;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.para_text{
+    font-size: 20px;
+}
+
+/* ------------Css for small screen --------- */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(image/phone-background.png);
+    }
+    .header-text{
+        margin-top: 80%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition:  right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .paragraph{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .about-col-1{
+        flex-basis: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .sub-title{
+        font-size: 35px;
+    }
+    .contact-right, .contact-left{
+    flex-basis: 100%;
+    }
+    .para_text{
+        font-size: 12px;
+    }
+    .projects{
+        font-size: 35px;
+    }
+    .project-details{
+        font-size: 16px;
+    }
+}
